@@ -51,7 +51,7 @@ function monospacedText(text, font) {
         monospacedString += char + spaceCount;
     }
 
-    return "\u2800\n" + monospacedString.replace(/\\/g, "\\\\").replace(/\|/g, "\\|").replace(/_/g, "\\_").replace(/`/g, "\\`").replace(/~/g, "\\~").replace(/\*/g, "\\*");
+    return "\u2800\n" + monospacedString.replace(/\\/g, "\\\\").replace(/\|/g, "\\|").replace(/_/g, "\\_").replace(/`/g, "\\`").replace(/~/g, "\\~").replace(/\*/g, "\\*").replace(/\>/g, "\\>");
 }
 
 document.getElementById("encode").addEventListener("click", () => {
